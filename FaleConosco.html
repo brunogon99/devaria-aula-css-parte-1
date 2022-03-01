@@ -22,29 +22,29 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="cover-container">
             <h1 class="title text-center">Fale com a Devaria através desse formulário</h1> <!--h1 é para marcação de titulo-->
-            <h2 class="sub-title">Para entrar em contato preenchar os campos abaixo e clique em enviar.</h2>
-            <form action="index.html">
-                <p>
+            <h2 class="sub-title text-center">Para entrar em contato preenchar os campos abaixo e clique em enviar.</h2>
+            <form action="index.html" class="contact-form margin-horizontal-20px">
+                <div>
                     <label>Nome:</label>
                     <input type="text" name="Nome" maxlength="70" required="true" />
                     </label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>E-mail:</label>
                     <input type="text" name="Email" maxlength="150" required="true" />
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>Comentário:</label>
                     <textarea name="Comentario" cols="50" rows="4"></textarea>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>Sexo:</label>
-                    <input type="radio" name="Sexo" /><label>Feminino</label>
-                    <input type="radio" name="Sexo" /><label>Masculino</label>
-                </p>
-                <p>
+                    <input type="radio" name="Sexo" /><span>Feminino</span>
+                    <input type="radio" name="Sexo" /><span>Masculino</span>
+                </div>
+                <div>
                     <label>Aonde você conheceu a Devaria?</label>
                     <select name="Conheceu">
                         <option selected>Youtube</option>
@@ -53,19 +53,19 @@
                         <option>Instagram</option>
                         <option>Outros</option>
                     </select>
-                    <p>
+                    <div>
                     <label>Caso escolha a opção outros, comente aqui:</label>
                     <input type="text" name="Outros" />
-                    </p>
-                </p>
-                <p>
+                    </div>
+                </div>
+                <div>
                     <input type="checkbox" name="Aceite" value="Aceite" />
-                    <label>Aceito receber novidades da Devaria</label>
-                </p>
-                <p>
+                    <span>Aceito receber novidades da Devaria</span>
+                </div>
+                <div>
                     <input type="submit" name="Enviar" value="Enviar" />
                     <input type="reset" name="Limpar" value="Limpar" />
-                </p>
+                </div>
             </form>
         </main>
         <footer>
